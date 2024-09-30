@@ -1,0 +1,544 @@
+/* Commun à toutes les pages */
+*{
+    margin: 0px; 
+    padding: 0px; 
+    font-family: 'Merriweather', sans-serif; 
+    background-color: black; 
+    font-size: 17px; 
+    color: #F9F9F9;}
+
+/* header */
+    header{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+        border-bottom: 5px solid black; 
+        padding: 10px; 
+        background-color: #B11B1A;}
+        h1{font-size: 42px; font-family: 'Playfair Display', serif; background-color:#B11B1A;}
+        #popcorn{height: 80px; background-color:#B11B1A;}
+        #soustitre{font-size: 20px; font-family: 'Playfair Display', sans-serif; text-align: center; min-width: 700px;}
+        #titrediv{background-color: #B11B1A;}
+
+/*CSS menu*/
+    #navhead{display:flex; justify-content: center;}
+        #menu{
+            display: flex; 
+            flex-wrap: nowrap; 
+            justify-content: space-around;
+            text-decoration: none; 
+            font-size: 21px;  
+            width: 90%; 
+            justify-content: center;
+            font-family: 'Playfair Display', sans-serif;}
+            a{text-decoration: none; color: white; background-color: transparent;}
+            ul {list-style-type: none; }
+                .lihead{border: solid #630707 2px; width: 20%; text-align: center;background-color:#B11B1A; padding: 10px;}
+                .lihead:hover{background-color: #FC3F3F;}
+                .lihead li{background-color: transparent;}
+
+/* Autres balises */
+    main{width: 100%; margin-top: 100px; height: fit-content;}
+
+    h2{
+        font-size: 32px; 
+        font-family: 'Playfair Display', sans-serif; 
+        color: #FC3F3F;
+        text-align: center; }
+        h3{font-size: 25px; height: 30px; margin-left: 5px;}
+        input{background-color: white;border: none; height: min-content;}
+        textarea{background-color: #FF5959; border:none;height: fit-content; }
+        label{background-color: transparent;}
+        .form {
+            border-radius: 30px;
+            height: fit-content;
+            padding: 50px;
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: space-between;
+            flex-direction: column; 
+            justify-content: center;}
+        p{background-color: transparent;}
+        button:hover{cursor:pointer}
+        
+
+
+/*home and movie*/
+    #main{
+        display: flex; 
+        justify-content: center; 
+        justify-content: space-around; 
+        flex-wrap: wrap; 
+        height: 550px;
+        align-content: space-between;}
+    #mainR{display: flex;
+    flex-wrap: nowrap;
+margin: 67px ;}
+        .Gbloc{
+            display: flex; 
+            width: 90%; 
+            align-items: center; 
+            height:fit-content; 
+            justify-content: space-between;
+            justify-content: center; 
+            flex-wrap: nowrap;
+            overflow-x:hidden;
+            position: relative;
+        overflow-x: hidden}
+            .h2bloc{min-width: 25%; max-width: 25%;}
+        .scroll-button {
+            position: absolute;
+            height: 250px;
+            width: 30px;
+            cursor: pointer;
+            display: none;
+            background-color:#B01A1A;
+            border: none;
+            opacity: 0.75;
+            top: 25px;}
+        .scroll-button:hover{background-color: #FF5959;}
+        .scroll-right{right:0;display: block}
+        .scroll-right2{right:0;display: block}
+        .scroll-right3{right:0;display: block}
+        .scroll-right4{right:0;display: block}
+        .scroll-left{position: absolute; left: 25%; z-index: 2;}
+        .scroll-left2{position: absolute; left: 25%; z-index: 2;}
+        .scroll-left3{position: absolute; left: 25%; z-index: 2;}
+        .scroll-left4{position: absolute; left: 25%; z-index: 2;}
+
+            .filmlist {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                overflow-x: hidden}
+                
+            .filmlist2 {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                overflow: hidden;
+                overflow-x: hidden}
+                .filmlist3 {
+                    width: 70%;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    overflow: hidden;}
+                    .filmlist4 {
+                        width: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: nowrap;
+                        overflow: hidden;}
+            .bloc {
+                margin-top: 25px;
+                margin-right:20px;
+                display: flex;
+                justify-content: center;
+                min-width: 22%;
+                position: relative;}
+                .affiche{height: 250px; width: 100%; border: #630707 solid 2px; margin-right: 5px;margin-left: 5px;}
+                .add-button {
+                    display: none;
+                    position: absolute; 
+                    top: 6%;
+                    right: 0%;
+                    transform: translate(-50%, -50%);
+                    background-color: #B01A1A;
+                    color: #fff;
+                    border: none;
+                    padding: 5px;
+                    cursor: pointer;
+                    max-height: 31px;
+                    font-size: 21px;
+                    transition: transform 0.2s;} 
+                    .etoile {
+                        display: none;
+                        position: absolute;
+                        top: 17%;
+                        right: 2%;
+                        transform: translate(-50%, -50%);
+                        background-color: #B01A1A;
+                        color: gray;
+                        border: none;
+                        padding: 0px;
+                        cursor: pointer;
+                        font-size: 21px;
+                        /* Ajoutez une ombre rouge */
+                        box-shadow: #B01A1A;
+                      }
+                      
+                      .etoile:hover {
+                        color: gold;
+                      }
+                      
+                      .add-button:hover {
+                        background-color: none;
+                      }
+                                           
+                .voir-details {
+                    width: 93%;
+                    height: 250px;
+                    display: none;
+                    position: absolute;
+                    bottom: 2px; /* Ajustez la valeur en fonction de la position verticale souhaitée */
+                    right: 10px; /* Ajustez la valeur en fonction de la position horizontale souhaitée */
+                    border: none;
+                    color: #B01A1A;}
+                .bloc:hover .add-button,
+                .bloc:hover .etoile,
+                .bloc:hover .voir-details {display: block;}
+                .bloc:hover {transform: scale(1.1); z-index: 1;}
+                * Styles pour les blocs de films */
+                .film {
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin: 10px;
+                }
+
+                /* Styles pour les étoiles */
+                .star {
+                font-size: 24px;
+                color: gray;
+                cursor: pointer;
+                }
+
+                .star:hover {
+                color: gold;
+                }
+
+                /* Styles pour le bouton "Voir les détails" dans le bloc du film */
+                .voir-details {
+                font-size: 14px; /* Taille de la police */
+                padding: 5px 10px; /* Espacement interne du bouton */
+                background-color: #FF5959; /* Couleur de fond du bouton */
+                color: white; /* Couleur du texte du bouton */
+                border: none; /* Supprimer la bordure du bouton */
+                cursor: pointer;
+                position: absolute; /* Position absolue pour le placer par rapport au conteneur parent */
+                bottom: 10px; /* Distance depuis le bas */
+                right: 10px; /* Distance depuis la droite */
+                border-radius: 5px; /* Coins arrondis */
+                height: 20%;
+                }
+                .voir-details:hover {
+                background-color: #FF5959; }
+
+                /* Styles pour la classe .movie, qui représente les blocs de film */
+                .movie {
+                /* Vos styles pour les blocs de film ici */
+                position: relative; /* Assurez-vous que les boutons sont positionnés par rapport à ce conteneur */
+                }
+
+                /* Styles pour le bouton "Voir les détails" dans la classe .movie */
+                .movie .voir-details {
+                font-size: 14px; /* Taille de la police */
+                padding: 5px 10px; /* Espacement interne du bouton */
+                background-color: #FF5959; /* Couleur de fond du bouton */
+                color: white; /* Couleur du texte du bouton */
+                border: none; /* Supprimer la bordure du bouton */
+                cursor: pointer;
+                position: absolute; /* Position absolue pour le placer par rapport au conteneur parent */
+                bottom: -0px; /* Distance depuis le bas */
+                right: 0px; /* Distance depuis la droite */
+                border-radius: 5px; /* Coins arrondis */
+                left: 8px; /* Distance depuis la gauche */
+                top: 200px; /* Distance depuis le haut */
+                }
+
+                /* Ajoutez un style pour changer la couleur du bouton au survol */
+                .movie .voir-details:hover {
+                background-color: #FF5959; /* Nouvelle couleur de fond au survol */
+                }
+                  
+                
+
+                    
+/* movie */
+#Gdivformmovie{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: center;
+        justify-content: space-around;
+        margin-top: 100px;
+    align-content: space-between}
+.Pdivformmovie{width: 25%;}
+    .formmovie{background-color: #B11B1A; width: 100%; justify-content: center;}
+    .inputfm{background-color: white;}   
+    .submitmovie{
+                display: flex;
+                justify-content: center;
+                border-radius: 15px;
+                align-content: center;
+                border: none;
+            padding: 10px;
+            background-color: #FC3F3F;}
+
+    
+   
+
+    
+/* Page à texte*/
+#mainT{display: flex; 
+flex-wrap: wrap;
+justify-content: center;}
+.blocus{width: 90%;}
+.h2us{text-align: center; width: 100%;margin-bottom: 25px;}
+        .pus{text-align: justify;}
+
+
+
+/* contact */
+.blocform{height: fit-content; display: flex; justify-content: center; flex-wrap: wrap;}
+    .formcontact{background-color: #FC3F3F; max-width: 70%; margin-top: 30px; margin-bottom: 70px;}
+            .submitcontact {
+                display: flex;
+                justify-content: center;
+                background-color: #B01A1A;
+                border-radius: 15px;
+                align-content: center;
+                border: none;
+            padding: 10px;}
+            .submitcontact:hover{background-color: #FF5959;}
+
+    
+/* footer */
+footer {
+    background-color: #FC3F3F;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+    justify-content: center;
+
+}
+#footcat{margin-top: 700px;}
+
+#navfoot {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#ulfoot {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    justify-content: center; /* Centrez horizontalement les éléments de la liste */
+}
+
+.lifoot {
+    background-color: #FC3F3F; /* Ajoutez la couleur de fond aux blocs de liens */
+    min-height: 100%;
+    padding: 10px;
+    text-align: center;
+    width: 50%; /* Réglez la largeur des blocs de liens sur 50% */
+}
+
+.lifoot:hover {
+    background-color: #FF5959; /* Restaurer la couleur de fond au survol */
+}
+
+/* Styles pour le modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 3;
+    overflow: auto;}
+
+.modal-content {
+background-color: rgba(0, 0, 0, 0.7);
+margin: 10% auto;
+padding: 20px;
+border: 1px solid #888;
+width: 80%;
+position: relative;
+    p{margin-bottom: 10px;}}
+
+    .close{
+        position: absolute;
+        top: 30px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+      }
+      
+      .cross-line {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transform: rotate(45deg);
+      }
+      
+      .cross-line:first-child {
+        transform: rotate(-45deg);
+      }
+      
+      .close-modal:hover .cross-line {
+        background-color: darkred;
+      }
+      
+
+.modal#h2{
+    color:#630707
+
+}
+
+
+h3{ font-size: 200px; 
+font-family: 'Playfair Display', sans-serif; 
+color: #ffffff;
+text-align: center; }
+h3{font-size: 25px; height: 30px; margin-left: 5px;}
+input{background-color: white;border: none; height: min-content; color: black;}
+textarea{background-color: #ffffff; border:none;height: fit-content; color:black}
+label{background-color: transparent;}
+
+
+/* account */
+    .account_welcome{
+        display: flex;
+        justify-content: right;
+    padding-right: 20px;
+    font-size: 25px;
+    }
+
+    .divformdeco{border-radius: 30px;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: center;}
+    .transparent{background-color: transparent;}
+    #menucompte{list-style: none; width: 90%; display:flex; position: fixed; top:200px ; left: 5%; background-color: transparent;}
+    #ulcompte{display: flex; flex-direction: column;}
+    .licompte{border: solid #630707 2px; text-align: center;background-color:#B11B1A; padding: 5px;}
+    .licompte:hover{background-color: #FC3F3F;}
+    .lihead li{background-color: transparent;}
+    .buttonCompte{border: none;}
+    .divCompte{
+        width: 50%;
+        padding: 10px;
+    }
+    #modifInfo {
+        margin-bottom: 10px;
+    }
+  
+    #divProfil{
+        display: none;
+    }
+    .width{
+        width: 80%;
+        justify-content: center;
+        justify-self: center;
+        }
+
+    .divMesFilms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centrer horizontalement */
+        align-items: flex-start; /* Aligner en haut verticalement */
+        gap: 10px; /* Espace entre les films */
+        flex-direction: row;
+        flex-flow: row wrap;
+    }
+    
+    .movie {
+        width: calc(20% - 10px); /* Pour avoir 5 colonnes avec un espace de 10px entre elles */
+        margin-bottom: 20px; /* Espace entre les lignes de films */
+    }
+    
+    /* Pour ajuster la largeur des colonnes en fonction de l'écran */
+    @media screen and (max-width: 1200px) {
+        .movie {
+            width: calc(25% - 10px); /* Pour avoir 4 colonnes avec un espace de 10px entre elles */
+        }
+    }
+    
+    
+    /* Styles CSS pour centrer le bloc de suppression de film */
+.form_suppr {
+    display: flex;
+    flex-direction: column; /* Aligner les éléments en colonne */
+    align-items: center; /* Centrer horizontalement */
+    justify-content: center; /* Centrer verticalement */
+    text-align: center; /* Centrer le texte à l'intérieur */
+    min-height: 100vh; /* Centrer verticalement sur toute la hauteur de la fenêtre */}
+    
+    /* Styles pour aligner le message à droite */
+    .welcome-message {
+    text-align: right;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse; /* Inverser le sens de lecture */
+    justify-content: flex-start; /* Aligner les étoiles à gauche */
+}
+
+.rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 3em;
+    transition: color .4s;
+    margin-right: 10px; /* Espacement entre les étoiles */
+}
+
+/* Classe pour les étoiles pleines */
+.rating a.full {
+    color: orange;
+}
+
+.rating a:hover,
+.rating a:focus,
+.rating a:hover ~ a,
+.rating a:focus ~ a {
+    color: orange;
+    cursor: pointer;
+}
+
+/* Espace bouton du panel*/
+.espace {
+    margin-top: 50px; 
+}
+
+#urlFilm {
+    background-color: #ff5733; /* Changer la couleur de fond du bouton (par exemple, orange) */
+    color: #fff; /* Changer la couleur du texte du bouton (par exemple, blanc) */
+    padding: 10px 20px; /* Ajouter de l'espacement autour du texte du bouton */
+    border: none; /* Supprimer la bordure du bouton */
+    cursor: pointer; /* Ajouter un curseur pointer pour indiquer que le bouton est cliquable */
+}
+
+#titre {
+    margin-bottom: 50px;
+    margin-top: 25px;
+    font-size: 32px; 
+    font-family: 'Playfair Display', sans-serif; 
+    color: #FC3F3F;
+    text-align: center;
+}
+  
+.etoile-remplie {
+    color: yellow; /* ou la couleur de votre choix pour une étoile remplie */
+  }
+
+.barreRecherche{display: flex; justify-content:flex-start; color: #630707;}
+#loupe{background-color:none; border: none;}
+
+.film-row{display: flex;
+    justify-content: space-between; /* Pour espacer les films horizontalement */
+    margin-bottom: 20px}
+    
